@@ -1,15 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
-import Content from "./Content";
+import "../node_modules/bulma/css/bulma.min.css";
+import Header from "./Components/Header/Header";
+// import { useState } from "react";
 
 function App() {
-  let foo = () => {
-    console.log("Hello LE Génie");
-  }
-    return (
+  return (
     <div>
-      <Content />
-      <button onClick={foo}>Clique !</button>
+      <Header/>
     </div>
   );
 }
